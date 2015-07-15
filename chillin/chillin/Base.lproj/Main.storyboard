@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chillin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-V6-ius">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Chill-ometer" id="MDZ-AF-1UG"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnO-9E-asf">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="faI-G7-ilK"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3mo-jA-Aye"/>
+                                    <barButtonItem systemItem="fastForward" id="QAP-jn-DSa">
+                                        <connections>
+                                            <segue destination="BTw-7L-XKs" kind="show" id="moo-rF-xgA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jnO-9E-asf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="AeF-B7-KYZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jnO-9E-asf" secondAttribute="trailing" constant="-16" id="KfD-Z0-86m"/>
+                            <constraint firstItem="JIo-V6-ius" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bUo-Tj-eD1"/>
+                            <constraint firstItem="JIo-V6-ius" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="f2z-3v-Sq1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JIo-V6-ius" secondAttribute="trailing" constant="-16" id="vSj-0q-znZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jnO-9E-asf" secondAttribute="bottom" id="vwo-HU-HwA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bR7-gU-bDx">
+            <objects>
+                <viewController id="BTw-7L-XKs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hnk-Ue-ajI"/>
+                        <viewControllerLayoutGuide type="bottom" id="EtY-Qo-9SY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h8O-9n-xk3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aZj-z6-1fI">
+                                <rect key="frame" x="94" y="94" width="412" height="412"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0f-gI-eJZ">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="2Fo-ve-2vl">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="rR3-Ub-9yD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2eI-L8-aEe"/>
+                                    <barButtonItem systemItem="fastForward" id="lxv-ig-GML"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EtY-Qo-9SY" firstAttribute="top" secondItem="aZj-z6-1fI" secondAttribute="bottom" constant="94" id="6jy-f0-tyC"/>
+                            <constraint firstItem="aZj-z6-1fI" firstAttribute="top" secondItem="hnk-Ue-ajI" secondAttribute="bottom" constant="74" id="ONc-H2-Ei2"/>
+                            <constraint firstItem="t0f-gI-eJZ" firstAttribute="leading" secondItem="h8O-9n-xk3" secondAttribute="leadingMargin" constant="-16" id="OWq-tR-2q0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aZj-z6-1fI" secondAttribute="trailing" constant="78" id="kjG-Rl-peF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t0f-gI-eJZ" secondAttribute="trailing" constant="-16" id="kqP-34-seh"/>
+                            <constraint firstItem="aZj-z6-1fI" firstAttribute="leading" secondItem="h8O-9n-xk3" secondAttribute="leadingMargin" constant="78" id="m4z-80-u2X"/>
+                            <constraint firstItem="EtY-Qo-9SY" firstAttribute="top" secondItem="t0f-gI-eJZ" secondAttribute="bottom" id="xYg-gr-4xH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXR-wG-cek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="454"/>
+        </scene>
+    </scenes>
+</document>
