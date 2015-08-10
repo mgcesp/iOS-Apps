@@ -15,7 +15,7 @@
 		A6F5D7761B79234D00EC9639 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5D7751B79234D00EC9639 /* TicTacToeTests.swift */; };
 		A6F5D7821B79238000EC9639 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D77F1B79238000EC9639 /* board.png */; };
 		A6F5D7831B79238000EC9639 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D7801B79238000EC9639 /* cross.png */; };
-		A6F5D7841B79238000EC9639 /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D7811B79238000EC9639 /* nought.png */; };
+		A6F5D7841B79238000EC9639 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D7811B79238000EC9639 /* circle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		A6F5D7751B79234D00EC9639 /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		A6F5D77F1B79238000EC9639 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
 		A6F5D7801B79238000EC9639 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
-		A6F5D7811B79238000EC9639 /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
+		A6F5D7811B79238000EC9639 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			children = (
 				A6F5D77F1B79238000EC9639 /* board.png */,
 				A6F5D7801B79238000EC9639 /* cross.png */,
-				A6F5D7811B79238000EC9639 /* nought.png */,
+				A6F5D7811B79238000EC9639 /* circle.png */,
 				A6F5D75E1B79234D00EC9639 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -203,7 +203,7 @@
 			files = (
 				A6F5D7831B79238000EC9639 /* cross.png in Resources */,
 				A6F5D7821B79238000EC9639 /* board.png in Resources */,
-				A6F5D7841B79238000EC9639 /* nought.png in Resources */,
+				A6F5D7841B79238000EC9639 /* circle.png in Resources */,
 				A6F5D7651B79234D00EC9639 /* Main.storyboard in Resources */,
 				A6F5D76A1B79234D00EC9639 /* LaunchScreen.xib in Resources */,
 				A6F5D7671B79234D00EC9639 /* Images.xcassets in Resources */,
