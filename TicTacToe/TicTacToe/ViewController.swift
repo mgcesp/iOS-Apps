@@ -61,17 +61,28 @@ class ViewController: UIViewController {
     }
     
     func checkWinner() {
+        
+        var labelText = ""
+        
         for combination in winningCombinations {
-            
+
             if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] {
-                
-                var labelText = ""
                 
                 if gameState[combination[0]] == 1 {
                     labelText = "Crosses win!"
                 } else {
                     labelText = "Circles win!"
                 }
+                
+                winnerLabel.text = labelText
+                
+                showGameOverElements()
+                
+                gameActive = false
+            }
+            
+            else if !contains(gameState, 0) {
+                labelText = "Tied Game!"
                 
                 winnerLabel.text = labelText
                 

@@ -140,17 +140,13 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1CW-aL-qBy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winner!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqg-a2-SnP">
-                                <rect key="frame" x="50" y="299" width="274" height="70"/>
-                                <color key="backgroundColor" red="0.29411764709999999" green="0.46666666670000001" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlJ-FR-qdm">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlJ-FR-qdm">
                                 <rect key="frame" x="126" y="397" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.83921568629999999" green="0.27058823529999998" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I0s-AC-dO2"/>
+                                    <constraint firstAttribute="width" constant="122" id="gVX-5C-Oum"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Play Again?">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -160,16 +156,30 @@
                                     <action selector="playAgainPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wdw-He-O0B"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqg-a2-SnP">
+                                <rect key="frame" x="37" y="295" width="300" height="78"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.46666666670000001" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="RAD-vH-tBe"/>
+                                    <constraint firstAttribute="width" constant="300" id="kvO-KY-j3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="0qy-OH-wRe" secondAttribute="centerX" id="2Zf-zT-Kg4"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="n1r-f5-leN" secondAttribute="top" constant="-12" id="5Ox-NX-Htc"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="uO8-tC-IGC" secondAttribute="top" constant="-12" id="5bL-3b-gJh"/>
+                            <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="dqg-a2-SnP" secondAttribute="top" constant="-111" id="6ph-Np-Mam"/>
                             <constraint firstAttribute="centerY" secondItem="0qy-OH-wRe" secondAttribute="centerY" id="AC3-H8-FyY"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="iin-n4-r7Y" secondAttribute="top" constant="-217" id="ApO-gI-sAe"/>
                             <constraint firstItem="nXM-iz-Qmp" firstAttribute="top" secondItem="0qy-OH-wRe" secondAttribute="top" constant="115" id="G6x-oj-oIE"/>
                             <constraint firstItem="8lW-EE-aRi" firstAttribute="top" secondItem="0qy-OH-wRe" secondAttribute="top" constant="115" id="OPZ-ub-yud"/>
+                            <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="AlJ-FR-qdm" secondAttribute="leading" constant="-89" id="ObA-Ir-Zhn"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="I2t-oe-DMy" secondAttribute="top" constant="-217" id="PJw-xq-F20"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="r8i-kS-ypw" secondAttribute="leading" constant="-115" id="Tre-xs-TKy"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="I2t-oe-DMy" secondAttribute="leading" constant="-217" id="YQx-50-sOr"/>
@@ -177,10 +187,12 @@
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="n1r-f5-leN" secondAttribute="leading" constant="-13" id="ZM4-KF-WCf"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="uO8-tC-IGC" secondAttribute="leading" constant="-217" id="ZVH-Ev-oRf"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="07X-eN-1tB" secondAttribute="top" constant="-217" id="dNY-cy-WjU"/>
+                            <constraint firstItem="AlJ-FR-qdm" firstAttribute="top" secondItem="dqg-a2-SnP" secondAttribute="bottom" constant="24" id="esP-4M-rIq"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="r8i-kS-ypw" secondAttribute="top" constant="-115" id="ez3-Yr-hi3"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="top" secondItem="TOi-ml-1vV" secondAttribute="top" constant="-12" id="f8w-b3-brz"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="TOi-ml-1vV" secondAttribute="leading" constant="-115" id="jIW-zD-Ly2"/>
                             <constraint firstItem="8lW-EE-aRi" firstAttribute="leading" secondItem="0qy-OH-wRe" secondAttribute="leading" constant="217" id="oB0-NN-RtN"/>
+                            <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="dqg-a2-SnP" secondAttribute="leading" id="xhB-Cg-0dm"/>
                             <constraint firstItem="nXM-iz-Qmp" firstAttribute="leading" secondItem="0qy-OH-wRe" secondAttribute="leading" constant="13" id="yWp-tg-qsj"/>
                             <constraint firstItem="0qy-OH-wRe" firstAttribute="leading" secondItem="iin-n4-r7Y" secondAttribute="leading" constant="-13" id="yXd-5y-g2V"/>
                         </constraints>
