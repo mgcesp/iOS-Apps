@@ -72,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A607F5471B9548C400239F9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A66C622C1B8D056100203D9E /* Player.swift */,
+				A6BB43541B8FF94A00C0EBE6 /* Squad.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		A66C61FB1B8D040200203D9E = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +110,7 @@
 				A66C62151B8D040200203D9E /* LaunchScreen.xib */,
 				A66C620B1B8D040200203D9E /* Footy.xcdatamodeld */,
 				A66C62071B8D040200203D9E /* Supporting Files */,
-				A66C622C1B8D056100203D9E /* Player.swift */,
-				A6BB43541B8FF94A00C0EBE6 /* Squad.swift */,
+				A607F5471B9548C400239F9C /* Models */,
 				A6BB43561B8FFC7900C0EBE6 /* PlayerTableViewController.swift */,
 				A6BB434E1B8FEA2400C0EBE6 /* TeamTableViewController.swift */,
 				A6BB43501B8FF1C300C0EBE6 /* PlayerTableViewCell.swift */,

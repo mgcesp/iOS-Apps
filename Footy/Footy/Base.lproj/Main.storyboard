@@ -45,9 +45,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="O3f-oI-4D9" kind="show" id="7An-mT-fq9"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="nLj-Gn-N5d" rowHeight="62" style="IBUITableViewCellStyleDefault" id="efs-AD-8uC">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -109,7 +106,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="O3f-oI-4D9" kind="show" id="Vwu-ac-b0d"/>
+                                                <segue destination="O3f-oI-4D9" kind="show" identifier="" id="TGk-SE-dTl"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -135,7 +132,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIe-DB-oIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1139.5" y="334.5"/>
+            <point key="canvasLocation" x="1131.5" y="340.5"/>
         </scene>
         <!--Player Table View Controller-->
         <scene sceneID="hLV-XS-b0H">
@@ -172,7 +169,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="vtP-j3-CMp" kind="show" identifier="Add Player" id="4Am-Nz-Kyb"/>
+                                                <segue destination="vtP-j3-CMp" kind="show" identifier="Add Player" id="GEz-wj-ulg"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -182,7 +179,7 @@
                                     <outlet property="playerImage" destination="1sI-Fq-R1s" id="Fpe-76-hDW"/>
                                     <outlet property="playerName" destination="HxH-xJ-95J" id="jJ8-Ho-UgG"/>
                                     <outlet property="playerPosition" destination="emx-ca-HrC" id="rHh-Pn-c5P"/>
-                                    <segue destination="Ncb-A1-UZO" kind="show" identifier="Player Detail" id="Qp5-yH-nmJ"/>
+                                    <segue destination="Ncb-A1-UZO" kind="show" identifier="Player Detail" id="qw0-th-zOr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -195,7 +192,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qu-g0-fqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734.5" y="334.5"/>
+            <point key="canvasLocation" x="1781.5" y="340.5"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="GOO-HI-qbJ">
@@ -227,7 +224,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="playerImage" destination="qRE-zw-igt" id="c3v-y5-4xz"/>
@@ -237,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuP-oc-LDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2246.5" y="334.5"/>
+            <point key="canvasLocation" x="2324.5" y="340.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KCY-FI-coY">
@@ -263,7 +259,6 @@
         <image name="Default" width="799" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Am-Nz-Kyb"/>
-        <segue reference="Vwu-ac-b0d"/>
+        <segue reference="GEz-wj-ulg"/>
     </inferredMetricsTieBreakers>
 </document>

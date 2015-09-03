@@ -32,4 +32,5 @@ class Squad {
         var team = [Player]()
         return team
     }
+    
 }

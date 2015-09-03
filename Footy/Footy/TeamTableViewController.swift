@@ -8,19 +8,38 @@
 
 import UIKit
 
+//var squad = [Player](count: 3, repeatedValue: Player(name: "Add Player", position: ""))
+
 class TeamTableViewController: UITableViewController {
     
     // new Player Model
     var player: Player?
-    var squad: [Player] = []
+    
+    // array of set number of Players
+    var squad = [Player](count: 3, repeatedValue: Player(name: "Add Player", position: ""))
     
     override func viewDidLoad() {
         
+        super.viewDidLoad()
+        
+        // check that player is not optional
         if let newPlayer = player {
-            squad.append(newPlayer)
+            
+            for var index = 0; index < squad.count; index++ {
+                println(index)
+                println(player?.name)
+                
+                // find first open spot and save new player
+                if squad[index].name == "Add Player" {
+                    squad[index] = newPlayer
+                    break
+                }
+                
+            }
         }
         
-        super.viewDidLoad()
+        self.tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +48,6 @@ class TeamTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
@@ -53,51 +71,5 @@ class TeamTableViewController: UITableViewController {
 
         return cell
     }
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
