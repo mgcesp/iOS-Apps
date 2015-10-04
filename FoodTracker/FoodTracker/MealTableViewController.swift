@@ -101,7 +101,7 @@ class MealTableViewController: UITableViewController {
                 let indexPath = tableView.indexPathForCell(selectedMealCell)!
                 // Get meal from location
                 let selectedMeal = meals[indexPath.row]
-                // Assign the retieved meal to the meal property of the destination view controller
+                // Assign the retrieved meal to the meal property of the destination view controller
                 mealDetailViewController.meal = selectedMeal
             }
         }

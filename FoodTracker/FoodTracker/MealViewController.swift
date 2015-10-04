@@ -125,9 +125,9 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
         // Hide the keyboard
         nameTextField.resignFirstResponder()
-        // Create a UIImagePickerController 
+        // Create a UIImagePickerController
         let imagePickerController = UIImagePickerController()
-        // Select source of image picker; only photo library
+        // Select source for image picker; only photo library
         imagePickerController.sourceType = .PhotoLibrary
         // Set image picker's delegate to this view controller
         imagePickerController.delegate = self

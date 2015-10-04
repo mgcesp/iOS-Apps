@@ -26,7 +26,7 @@ class TeamTableViewController: UITableViewController {
         if let newPlayer = player {
             
             for var index = 0; index < squad.count; index++ {
-                println(index)
+                println(index).
                 println(player?.name)
                 
                 // find first open spot and save new player

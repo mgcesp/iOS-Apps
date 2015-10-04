@@ -90,10 +90,10 @@
 			children = (
 				A6F49E2C1BB78C35005FFF71 /* Meal.swift */,
 				A6F49E0A1BB75E8B005FFF71 /* AppDelegate.swift */,
+				A6F49E321BB79279005FFF71 /* MealTableViewController.swift */,
 				A6F49E0C1BB75E8B005FFF71 /* MealViewController.swift */,
 				A6F49E0E1BB75E8B005FFF71 /* Main.storyboard */,
 				A6F49E2F1BB78F36005FFF71 /* MealTableViewCell.swift */,
-				A6F49E321BB79279005FFF71 /* MealTableViewController.swift */,
 				A6F49E2A1BB76C60005FFF71 /* RatingController.swift */,
 				A6F49E111BB75E8B005FFF71 /* Assets.xcassets */,
 				A6F49E131BB75E8B005FFF71 /* LaunchScreen.storyboard */,
@@ -407,6 +407,7 @@
 				A6F49E261BB75E8B005FFF71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6F49E271BB75E8B005FFF71 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				A6F49E291BB75E8B005FFF71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
